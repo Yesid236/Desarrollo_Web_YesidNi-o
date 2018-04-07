@@ -6,18 +6,96 @@
     <meta name="author:" content="Yesid Nino">
     <meta name="keywords" content="html,css,xml,javascript">
     <title>Hoja de Vida</title>
+    <svg>
+      <image xlink:href="../imagen/logo.svg" width="150px" height="250px"></image>
+    </svg>
+    <h1>Hoja de Vida</h1>
     <h2><em>Yesid Steven Niño Rodriguez</em></h2>
     <h3>Bogotá D.C, 23 de Junio de 1991</h3>
     <nav>
       <ul>
         <li><a href="../index.html">Inicio</a></li>
-        <li><a href="html/educacion.html">Educación</a></li>
-        <li><a href="html/pagina3.html">Experiencia</a></li>
+        <li><a href="../html/educacion.html">Educación</a></li>
+        <li><a href="../html/experiencia.html">Experiencia</a></li>
       </ul>
     </nav>
   </head>
   <body>
-
+    <h2>Educación</h2>
+    <section>
+      <table border="4">
+      <thead>
+            <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culminó?</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2018</td>
+          <td>Minuto de Dios</td>
+          <td>Bogotá D.C.</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td>SENA</td>
+          <td>Bogotá D.C.</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td>Externado Simon Bolivar</td>
+          <td>Bogotá D.C.</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2007</td>
+          <td>Liceo Americano de Cundinamarca</td>
+          <td>Soacha-Cundinamarca</td>
+          <td>Si</td>
+        </tr>
+        </tbody>
+      </table>
+      </section>
+      <form autocomplete="on" name="Formulario Estudio">
+        <h3>Agregar Estudios</h3>
+        <p>
+        <label for="Año">Año</label>
+        <select>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+          <option>2009</option>
+        </select>
+        </p>
+        <p>
+        <label for="Institución">Institución</label>
+        <br>
+        <input type="text" id=Institución>
+        </p>
+        <p>
+        <label for="Lugar">Lugar</label>
+        <br>
+        <input type="text" id=Lugar>
+        </p>
+        <p>
+    			<label for="Culminó">¿Culminó?: </label>
+    			<input type="radio" name="Culminó"> Si
+    			<input type="radio" name="Culminó"> No
+    		</p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+          </form>
   </body>
   <footer>@Derechos Reservados
     <ul>
@@ -25,6 +103,5 @@
       <li><strong>Celular:</strong> 312 359 0719</li>
       <li><strong>Dirección:</strong> Calle 16 G 105-20</li>
     </ul>
-
   </footer>
 </html>
